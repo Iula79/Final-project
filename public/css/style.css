@@ -5,36 +5,26 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
 #main {
-    height:900px;
-    margin:120px;
+    height: 900px;
+    margin: 120px;
     border-radius: 20px;
-    background-color: white;
-
-/* Safari 5.1 to 6.0 */
-background: -webkit-radial-gradient(50% 50%, closest-side, rgba(200,200,200, 1), rgba(70,70,70,.9));
-/* For Opera 11.6 to 12.0 */
-background: -o-radial-gradient(50% 50%, closest-side,  rgba(200,200,200, 1), rgba(170,70,70,.9));
-/* For Firefox 3.6 to 15 */
-background: -moz-radial-gradient(50% 50%, closest-side, rgba(200,200,200, 1), rgba(70,70,70,.9));
-/* Standard syntax */
-background: radial-gradient(closest-side at 50% 50%,rgba(200,200,200, 1), rgba(70,70,70,.9));
-
+    background-color: rgba(70, 70, 70, .9);
 }
 #header {
-    height:auto;
-    padding: 30px 0px;
+    height: auto;
+    padding: 15px;
 }
-
 .jumbotron {
-background-color:transparent !important;
+    background-color: transparent !important;
 }
 h1 {
- font-family: Josefin Sans;
- font-size: 80px;
- color: white;
+    font-family: Josefin Sans;
+    padding-top: 30px;
+    font-size: 80px;
+    color: white;
 }
-
 h2 {
     font-family: Cinzel Decorative, cursive;
     font-size: 25px;
@@ -44,10 +34,24 @@ h2 {
     font-family: Cinzel Decorative, cursive;
     font-size: 15px;
     color: white;
-    padding:20px;
+    padding: 20px;
     text-align: justify;
 }
 #mycarousel {
     height: 500px;
-
 }
+
+/*-------------show---------------*/
+
+#main2 {
+    height: 900px;
+    margin: 120px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.89)
+}
+h3 {
+    font-family: Cinzel Decorative, cursive;
+    padding-top: 20px;
+    font-size: 40px;
+}
+#
