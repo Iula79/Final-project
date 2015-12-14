@@ -2,10 +2,10 @@
 appBB.controller("BBController", BBController);
 
 function BBController() {
-    var tb = document.getElementById('Apt2')
-    tb.addEventListener("click", function(event){
-        console.log("pressed")
-    })
+    // var tb = document.getElementById('Apt2')
+    // tb.addEventListener("click", function(event){
+    //     console.log("pressed")
+    // })
 
  console.log("here")
 

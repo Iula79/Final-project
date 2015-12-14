@@ -1,19 +1,4 @@
-<div id="main2" align="center">
-    <div class="page-header" id="header">
-
-        <h3>RESIDENZA CARDUCCI</h3>
-
-    </div>
-    <nav class="navbar navbar-default" id="navbar">
-        <div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a ui-sref-active="active" ui-sref="home">HOME</a></li>
-                <li><a ui-sref=".apt1">APT 1</a></li>
-                <li><a ui-sref=".apt2">APT 2</a></li>
-                <li><a ui-sref=".apt3">APT 3</a></li>
-            </ul>
-        </div>
-    </nav>
+<section>
     <div ng-controller="BBController as bbs">
 
             <div>
@@ -27,6 +12,7 @@
 
                     <ul><li ng-repeat="apt in bbs.apartments[0].amenities">{{apt}}</li></ul>
                 </div>
+
             <!-- </div>
             <div>
                 <p>{{bbs[0].description}}</p>
@@ -47,3 +33,4 @@
 
     </div>
 </div>
+</section>

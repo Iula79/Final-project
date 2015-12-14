@@ -1,46 +1,31 @@
-<div id="main2" align="center">
-    <div class="page-header" id="header">
 
-        <h3>RESIDENZA CARDUCCI</h3>
-
-    </div>
-    <nav class="navbar navbar-default" id="navbar">
-        <div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a ui-sref-active="active" ui-sref="home">HOME</a></li>
-                <li><a ui-sref=".apt1">APT 1</a></li>
-                <li><a ui-sref=".apt2">APT 2</a></li>
-                <li><a ui-sref=".apt3">APT 3</a></li>
-            </ul>
-        </div>
-    </nav>
     <div ng-controller="BBController as bbs">
 
             <div>
-                <h4>{{bbs.apartments[0].name}}</h4>
+                <h4>{{bbs.apartments[1].name}}</h4>
             </div>
             <div class="row">
                 <div class="col-sm-8">
-                    <img ng-src="{{bbs.apartments[0].images_url[0]}}" />
+                    <img ng-src="{{bbs.apartments[1].images_url[0]}}" />
                 </div>
                 <div "col-sm-4">
 
-                    <ul><li ng-repeat="apt in bbs.apartments[0].amenities">{{apt}}</li></ul>
+                    <ul><li ng-repeat="apt in bbs.apartments[1].amenities">{{apt}}</li></ul>
                 </div>
             <!-- </div>
             <div>
-                <p>{{bbs[0].description}}</p>
+                <p>{{bbs[1].description}}</p>
             </div>
 
-            <div>{{bbs[0].map}}</div>
+            <div>{{bbs[1].map}}</div>
 
             <div>
-                <p>{{bbs[0].address.street}}</p>
-                <p>{{bbs[0].address.Zip}}</p>
-                <p>{{bbs[0].address.City}}</p>
-                <p>{{bbs[0].Country}}</p>
-                <p>{{bbs[0].address.Tel}}</p>
-                <p>{{bbs[0].address.Email}}</p>
+                <p>{{bbs[1].address.street}}</p>
+                <p>{{bbs[1].address.Zip}}</p>
+                <p>{{bbs[1].address.City}}</p>
+                <p>{{bbs[1].Country}}</p>
+                <p>{{bbs[1].address.Tel}}</p>
+                <p>{{bbs[1].address.Email}}</p>
 
                 {{"toggle contact form"}}
             </div> -->
