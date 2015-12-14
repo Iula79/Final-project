@@ -10,10 +10,15 @@ function MainRouter(states, router) {
   }).state( 'show',{
       url:'/show',
       templateUrl:'show.html'
-  }).state('showSingle', {
-      url:'/showSingle',
-      templateUrl:'show_single.html',
-
-});
+  }).state('show/apt1'),{
+      url:'/apt1',
+      templateUrl:'partial-apt1.html'
+  }.state('show/apt2'),{
+      url:'/apt2',
+      templateUrl:'partial-apt2.html'
+  }.state('show/apt3'),{
+      url:'/apt3',
+      templateUrl:'partial-apt3.html'
+  }
     router.otherwise('/');
 }

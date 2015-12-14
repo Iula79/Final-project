@@ -9,9 +9,9 @@
             <div>
                 <ul class="nav navbar-nav">
                     <li class="active"><a ui-sref-active="active" ui-sref="home">HOME</a></li>
-                    <li><a ui-sref="showSingle">APT 1</a></li>
-                    <li><a ui-sref="showSingle/2">APT 2</a></li>
-                    <li><a ui-sref="showSingle/3">APT 3</a></li>
+                    <li><a ui-sref=".apt1">APT 1</a></li>
+                    <li><a ui-sref=".apt2">APT 2</a></li>
+                    <li><a ui-sref=".apt3">APT 3</a></li>
                 </ul>
             </div>
     </nav>
@@ -28,4 +28,6 @@
         <p>VGDV</p>
     </div>
 
+         <div ui-view></div>
+         
 </div>
