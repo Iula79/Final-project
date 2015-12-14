@@ -2,8 +2,8 @@
 appBB.controller("BBController", BBController());
 
 function BBController() {
-//     $location.path()
 
+    // $location.path()
     // var tb = document.getElementById('Apt2')
     // tb.addEventListener("click", function(event){
     //     console.log("pressed")
