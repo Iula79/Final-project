@@ -1,13 +1,17 @@
 //something
-appBB.controller("BBController", BBController);
+appBB.controller("BBController", BBController('$scope','$stateParams','$location'));
 
-function BBController() {
+function BBController($scope, $routeParams,$location) {
+//     $location.path()
+ // $scope.num = $routeParams.num;
     var tb = document.getElementById('Apt2')
     tb.addEventListener("click", function(event){
         console.log("pressed")
     })
 
- console.log("here")
+console.log('$location')
+ console.log("here");
+ console.log("$scope.num")
 
     var self = this;
 

@@ -1,6 +1,6 @@
 var appBB = angular
 .module('appBB', ['ui.router'])
-.config(['$stateProvider', '$urlRouterProvider', MainRouter]);
+.config(['$stateProvider', '$urlRouterProvider', '$routeParams', MainRouter]);
 
 function MainRouter(states, router) {
     states
@@ -10,9 +10,11 @@ function MainRouter(states, router) {
   }).state( 'show',{
       url:'/show',
       templateUrl:'show.html'
-  }).state('showSingle', {
-      url:'/showSingle',
-      templateUrl:'show_single.html',
+  }).state('/showSingle/:num', {
+      url:'/showSingle/:num',
+      templateUrl:'show_single'+ $routeParams.num + '.html',
+      controller: 'BBController'
+
 
 });
     router.otherwise('/');
