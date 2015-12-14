@@ -4,13 +4,14 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: Cinzel Decorative, cursive;
 }
 
 #main {
-    height: 900px;
     margin: 120px;
     border-radius: 20px;
     background-color: rgba(70, 70, 70, .9);
+    padding:20px;
 }
 #header {
     height: auto;
@@ -21,37 +22,50 @@ body {
 }
 h1 {
     font-family: Josefin Sans;
-    padding-top: 30px;
     font-size: 80px;
     color: white;
 }
 h2 {
-    font-family: Cinzel Decorative, cursive;
     font-size: 25px;
     color: white;
 }
 #paragraph {
-    font-family: Cinzel Decorative, cursive;
     font-size: 15px;
     color: white;
-    padding: 20px;
+    padding-bottom: 20px;
     text-align: justify;
 }
 #mycarousel {
     height: 500px;
 }
+.btn-info {
+background-color: #424242;
+border-color: #f5f5f5;
+}
+
+.btn {
+    margin: 20px;
+    font-family: Josefin Sans;
+}
 
 /*-------------show---------------*/
 
 #main2 {
-    height: 900px;
     margin: 120px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.89)
+    background-color: rgba(255, 255, 255, 0.89);
+    padding:30px;
 }
 h3 {
-    font-family: Cinzel Decorative, cursive;
-    padding-top: 20px;
+    font-family: Josefin Sans;
+    font-size: 80px;
+}
+h4 {
     font-size: 40px;
 }
-#
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+nav.tabs a.active { background: rgba(255,255,255,1);}

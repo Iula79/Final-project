@@ -10,7 +10,10 @@ function MainRouter(states, router) {
   }).state( 'show',{
       url:'/show',
       templateUrl:'show.html'
-  });
-    router.otherwise('/');
+  }).state('showSingle', {
+      url:'/showSingle',
+      templateUrl:'show_single.html',
 
+});
+    router.otherwise('/');
 }
