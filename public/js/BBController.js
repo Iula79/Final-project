@@ -3,12 +3,11 @@ appBB.controller("BBController", BBController('$scope','$stateParams','$location
 
 function BBController($scope, $routeParams,$location) {
 //     $location.path()
- // $scope.num = $routeParams.num;
-    var tb = document.getElementById('Apt2')
-    tb.addEventListener("click", function(event){
-        console.log("pressed")
-    })
-
+ $scope.num = $routeParams.num;
+    // var tb = document.getElementById('Apt2')
+    // tb.addEventListener("click", function(event){
+    //     console.log("pressed")
+    // })
 console.log('$location')
  console.log("here");
  console.log("$scope.num")
