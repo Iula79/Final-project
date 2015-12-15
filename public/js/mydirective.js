@@ -5,7 +5,10 @@ appBB.directive("mydirective", function(){
         templateUrl: 'directives/mydirective.html',
         replace:true,
         scope: {
-            testOne:"@"
+            test:"@",
+            second:"@",
+            third: "=",
+            aprt: "="
         }
     }
 })

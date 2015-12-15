@@ -69,3 +69,7 @@ h4 {
   vertical-align: top;
 }
 nav.tabs a.active { background: rgba(255,255,255,1);}
+
+#mydirective {
+    font-size: 40px;
+}

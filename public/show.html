@@ -28,6 +28,7 @@
         <p>VGDV</p>
     </div>
     <div ui-view></div>
-         <!-- <mydirective apartment-object="apartments"></mydirective> -->
-            <<mydirective test-one={{bbs.test.one}}></mydirective>
+    <div ng-controller="BBController as bbs">
+            <mydirective test={{bbs.test.one}} second={{bbs.test.two}} third="bbs.myObject.objectOne[0]" aprt="bbs.apartments.apartmentList[0]"></mydirective>
+            </div>
 </div>
