@@ -1,60 +1,69 @@
 //something
 appBB.controller("BBController", BBController);
 
-function BBController() {
+
+function BBController($state,router) {
     // var tb = document.getElementById('Apt2')
     // tb.addEventListener("click", function(event){
     //     console.log("pressed")
     // })
 
- console.log("here")
-
+    console.log("here");
+    //
     var self = this;
 
-    self.apartments = [
-        {
+    self.test = {
+        one: "yes",
+        two: "no"
+    };
 
-        name: "Suite Nord",
-        images_url: ["../../images/card_salone.jpg"],
-        description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
-        amenities: ["2 rooms", "kitchenette", "Parking" ,"Air conditioning", "Laundry"],
-        map:{},
-        address:{street: "Via Carducci 25/C",
-                    Zip:"37129",
-                    City:"Verona",
-                    Country:"Italia",
-                    Tel: "0039 045 8034501",
-                    Cell: "0039 347 8545386",
-                    Email: 'info@residenzacarducci.com'
-                    }
-    },
-
-    {
-        name: "Suite Sud",
-        images: ["../../images/card_salone.jpg"],
-        description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
-        amenities: [],
-        map:{},
-        address:{street: "Via Carducci 25/C",
-                    Zip:"37129",
-                    City:"Verona",
-                    Country:"Italia",
-                    Tel: "0039 045 8034501",
-                    Cell: "0039 347 8545386",
-                    Email: 'info@residenzacarducci.com'
-                    }
-    },
-
-    {
-        name: "VGDV",
-        images: [],
-        description: "",
-        amenities: [],
-        map:{},
-        address:{street: "Via Carducci 25/C",
-                    Zip:"37129",
-                    City:"Verona",
-                    Country:"Italia"}
-    }
-]
+    // self.apartments = [{
+    //
+    //         'name': "Suite Nord",
+    //         'images_url': ["../../images/card_salone.jpg"],
+    //         'description': "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
+    //         'amenities': ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry"],
+    //         'map': {},
+    //         'address': {
+    //             'street': "Via Carducci 25/C",
+    //             'Zip': "37129",
+    //             'City': "Verona",
+    //             'Country': "Italia",
+    //             'Tel': "0039 045 8034501",
+    //             'Cell': "0039 347 8545386",
+    //             'Email': 'info@residenzacarducci.com'
+    //         }
+    //     },
+    //
+    //     {
+    //         'name': "Suite Sud",
+    //         'images': ["../../images/card_salone.jpg"],
+    //         'description': "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
+    //         'amenities': [],
+    //         'map': {},
+    //         'address': {
+    //             'street': "Via Carducci 25/C",
+    //             'Zip': "37129",
+    //             'City': "Verona",
+    //             'Country': "Italia",
+    //             'Tel': "0039 045 8034501",
+    //             'Cell': "0039 347 8545386",
+    //             'Email': 'info@residenzacarducci.com'
+    //         }
+    //     },
+    //
+    //     {
+    //         'name': "VGDV",
+    //         'images': [],
+    //         'description': "",
+    //         'amenities': [],
+    //         'map': {},
+    //         'address': {
+    //             'street': "Via Carducci 25/C",
+    //             'Zip': "37129",
+    //             'City': "Verona",
+    //             'Country': "Italia"
+    //         }
+    //     }
+    // ];
 }

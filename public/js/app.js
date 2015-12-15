@@ -9,7 +9,8 @@ function MainRouter(states, router) {
       templateUrl: 'home.html'
   }).state( 'show',{
       url:'/show',
-      templateUrl:'show.html'
+      templateUrl:'show.html',
+      controller: 'BBController as bbs'
   }).state('show.apt1',{
       url:'/apt1',
       templateUrl:'partial-apt1.html'
