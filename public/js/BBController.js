@@ -1,10 +1,9 @@
 //something
-appBB.controller("BBController", BBController());
+appBB.controller("BBController", BBController);
 
 
 
-function BBController() {
-
+function BBController($state, $stateParams) {
     // var tb = document.getElementById('Apt2')
     // tb.addEventListener("click", function(event){
     //     console.log("pressed")
@@ -13,23 +12,17 @@ function BBController() {
 
 
     console.log("here");
-    //
+
     var self = this;
 
-    self.test = {
-        one: "yes",
-        two: "no"
-    };
 
-    self.myObject = {objectOne:[{
-        three: "why"},
-        {four:"not"}]
-    };
+    self.myParams = parseInt($stateParams.id) - 1;
 
-    self.apartments = { apartmentList:[{
+
+    self.apartments = [{
 
             name: "Suite Nord",
-            images_url: ["../../images/card_salone.jpg"],
+            images_url: ["images/card_salone.jpg"],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry"],
             map: {},
@@ -46,7 +39,7 @@ function BBController() {
 
         {
             name: "Suite Sud",
-            images_url: ["../../images/card_salone.jpg"],
+            images_url: ["images/card_salone.jpg"],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry"],
             map: {},
@@ -63,7 +56,7 @@ function BBController() {
 
         {
             name: "VGDV",
-            images_url: ["../../images/card_salone.jpg"],
+            images_url: ["images/card_salone.jpg"],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry"],
             map: {},
@@ -77,5 +70,15 @@ function BBController() {
                 Email: 'info@residenzacarducci.com'
             }
         }
-    ]}
+    ]
+
+    self.currentIndex = 0
+
+    self.next = function() {
+        self.currentIndex < self.apartments[0].images_url.length - 1 ? self.currentIndex++ : self.currentIndex = 0;
+    };
+
+    self.prev = function() {
+        self.currentIndex > 0 ? self.currentIndex-- : self.currentIndex = self.apartments[0].images_url.length - 1;
+    };
 }

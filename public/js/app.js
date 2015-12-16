@@ -1,5 +1,5 @@
 var appBB = angular
-.module('appBB', ['ui.router'])
+.module('appBB', ['ui.router','ngAnimate'])
 .config(['$stateProvider', '$urlRouterProvider', MainRouter]);
 
 function MainRouter(states, router) {

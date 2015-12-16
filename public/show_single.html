@@ -12,42 +12,41 @@
                 <li><a ui-sref-active="active" ui-sref="showSingle({id:1})" >APT 1</a></li>
                 <li><a ui-sref-active="active" ui-sref="showSingle({id:2})" >APT 2</a></li>
                 <li><a ui-sref-active="active" ui-sref="showSingle({id:3})" >APT 3</a></li>
-
             </ul>
         </div>
     </nav>
 
     <div ng-controller="BBController as bbs">
 
+            <slider images="bbs.apartments[bbs.myParams].images_url" />
             <div>
-                <h4>{{bbs.apartments[1].name}}</h4>
+                <h4>{{bbs.apartments[bbs.myParams].name}}</h4>
             </div>
             <div class="row">
                 <div class="col-sm-8">
-                    <img ng-src="{{bbs.apartments[1].images_url[0]}}" />
+                    <img ng-src="{{bbs.apartments[bbs.myParams].images_url[0]}}" />
                 </div>
                 <div "col-sm-4">
 
-                    <ul><li ng-repeat="apt in bbs.apartments[1].amenities">{{apt}}</li></ul>
+                    <ul><li ng-repeat="apt in bbs.apartments[bbs.myParams].amenities">{{apt}}</li></ul>
                 </div>
-            <!-- </div>
+            </div>
             <div>
-                <p>{{bbs[1].description}}</p>
+                <p>{{bbs.apartments[bbs.myParams].description}}</p>
             </div>
 
-            <div>{{bbs[1].map}}</div>
+            <div>{{bbs.apartments[bbs.myParams].map}}</div>
 
             <div>
-                <p>{{bbs[1].address.street}}</p>
-                <p>{{bbs[1].address.Zip}}</p>
-                <p>{{bbs[1].address.City}}</p>
-                <p>{{bbs[1].Country}}</p>
-                <p>{{bbs[1].address.Tel}}</p>
-                <p>{{bbs[1].address.Email}}</p>
-
-                {{"toggle contact form"}}
-            </div> -->
+                <p>{{bbs.apartments[bbs.myParams].address.street}}</p>
+                <p>{{bbs.apartments[bbs.myParams].address.City}}</p>
+                <p>{{bbs.apartments[bbs.myParams].address.Zip}}</p>
+                <p>{{bbs.apartments[bbs.myParams].address.Country}}</p>
+                <p>{{bbs.apartments[bbs.myParams].address.Tel}}</p>
+                <p>{{bbs.apartments[bbs.myParams].address.Email}}</p>
+<!--
+                {{"toggle contact form"}} -->
+            </div>
 
     </div>
-</div>
 </div>
