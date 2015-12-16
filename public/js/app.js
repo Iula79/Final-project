@@ -14,6 +14,5 @@ function MainRouter(states, router) {
       url:'/showSingle/:id',
       templateUrl:'show_single.html'
 });
-
     router.otherwise('/');
 }
