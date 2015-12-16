@@ -1,17 +1,16 @@
-<div id="main2" align="center">
+<div id="main2" align="center" ng-app="appBB">
     <div class="page-header" id="header">
 
         <h3>RESIDENZA CARDUCCI</h3>
-        <h4>Scope route value{{}}</h4>
 
     </div>
     <nav class="navbar navbar-default" id="navbar">
         <div>
             <ul class="nav navbar-nav">
                 <li class="active"><a ui-sref-active="active" ui-sref="home">HOME</a></li>
-                <li><a ui-sref-active="active" ui-sref="showSingle/1" >APT 1</a></li>
-                <li><a ui-sref-active="active" ui-sref="showSingle/2" >APT 2</a></li>
-                <li><a ui-sref-active="active" ui-sref="showSingle/3" >APT 3</a></li>
+                <li><a ui-sref-active="active" ui-sref="showSingle({id:1})" >APT 1</a></li>
+                <li><a ui-sref-active="active" ui-sref="showSingle({id:2})" >APT 2</a></li>
+                <li><a ui-sref-active="active" ui-sref="showSingle({id:3})" >APT 3</a></li>
             </ul>
         </div>
     </nav>
@@ -47,4 +46,5 @@
             </div> -->
 
     </div>
+</div>
 </div>

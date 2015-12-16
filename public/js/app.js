@@ -10,10 +10,9 @@ function MainRouter(states, router) {
   }).state( 'show',{
       url:'/show',
       templateUrl:'show.html'
-  }).state('showSingle/:num', {
-      url:'/showSingle/:num',
-      templateUrl:'show_single.html',
-      controller: 'BBController'
+  }).state('showSingle', {
+      url:'/showSingle/:id',
+      templateUrl:'show_single.html'
 });
     router.otherwise('/');
 }
