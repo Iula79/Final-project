@@ -8,11 +8,12 @@
     <nav class="navbar navbar-default" id="navbar">
             <div>
                 <ul class="nav navbar-nav">
+
                     <li class="active"><a ui-sref-active="active" ui-sref="home" >HOME</a></li>
                     <li><a ui-sref="showSingle({id: 1})" id="apt1">APT 1</a></li>
                     <li><a ui-sref="showSingle({id: 2})" id="apt1">APT 2</a></li>
                     <li><a ui-sref="showSingle({id: 3})" id="apt1">APT 3</a></li>
-                </ul>
+
             </div>
     </nav>
     <div class="row">
@@ -27,5 +28,7 @@
         <img src="../images/affitto_verona_sala1.jpg" alt="">
         <p>VGDV</p>
     </div>
+
+         <div ui-view></div>
 
 </div>
