@@ -1,10 +1,10 @@
-'use strict';
-const express = require('express');
-const logger = require('morgan');
-const bodyParser = require('body-parser');
-const rooms = require('./rooms.json');
-const app = express();
-const cors = require('cors');
+
+var express = require('express');
+var logger = require('morgan');
+var bodyParser = require('body-parser');
+var rooms = require('./rooms.json');
+var app = express();
+var cors = require('cors');
 
 app.use( express.static(__dirname+'/public'));
 app.use(cors());
@@ -14,6 +14,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('port', (process.env.PORT || 3000));
 
-app.listen(app.get('port'), function() {
-    console.log("App running on port : ", app.get('port'));
+app.listen(3000, function() {
+    console.log("App running on port 3000");
 });
