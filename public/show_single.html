@@ -8,9 +8,9 @@
         <div>
             <ul class="nav navbar-nav">
                 <li><a ui-sref="home">HOME</a></li>
-                <li ng-class="{ active : bbs.active == 1}"><a ui-sref="showSingle({id:1})">APT 1</a></li>
-                <li ng-class="{ active: bbs.active == 2 }"><a ui-sref="showSingle({id:2})">APT 2</a></li>
-                <li ng-class="{ active: bbs.active == 3 }"><a ui-sref="showSingle({id:3})">APT 3</a></li>
+                <li ng-class="{ active : bbs.active == 1}"><a ui-sref="showSingle({id:1})">SUITE NORD</a></li>
+                <li ng-class="{ active: bbs.active == 2 }"><a ui-sref="showSingle({id:2})">SUITE SUD</a></li>
+                <li ng-class="{ active: bbs.active == 3 }"><a ui-sref="showSingle({id:3})">VERAZZANO</a></li>
             </ul>
         </div>
     </nav>
@@ -38,8 +38,8 @@
             </div>
         </div>
         <div id="google_maps" class="row">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6021.4509830801735!2d11.001172050208703!3d45.44184420357091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5f36f86be6eb%3A0x81f33278e3da8df5!2sVia+Giosu%C3%A8+Carducci%2C+25%2C+37129+Verona+VR%2C+Italy!5e0!3m2!1sen!2sus!4v1450292939819"
-            allowfullscreen></iframe>
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="642" height="443" ng-src="{{bbs.apartments[bbs.myParams].map}}">
+            </iframe>
         </div>
 
         <div id="address">

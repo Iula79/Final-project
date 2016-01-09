@@ -3,7 +3,7 @@ appBB.controller("BBController", BBController);
 
 
 
-function BBController($state, $stateParams, $rootScope) {
+function BBController($state, $stateParams, $sce, $rootScope) {
     // var tb = document.getElementById('Apt2')
     // tb.addEventListener("click", function(event){
     //     console.log("pressed")
@@ -14,8 +14,8 @@ function BBController($state, $stateParams, $rootScope) {
     console.log("here");
 
     var self = this;
-    self.x = 1;
-
+    self.map1 = $sce.trustAsResourceUrl("https://maps.google.com/maps?hl=en&q=Residenza Carducci Verona&ie=UTF8&t=roadmap&z=13&iwloc=B&output=embed");
+    self.map2 = $sce.trustAsResourceUrl('https://maps.google.com/maps?hl=en&q=Residenza Verazzano Verona&ie=UTF8&t=roadmap&z=14&iwloc=B&output=embed');
     self.active = $stateParams.id;
 
     self.myParams = parseInt($stateParams.id) - 1;
@@ -27,7 +27,8 @@ function BBController($state, $stateParams, $rootScope) {
             images_url: ["images/33449159.jpg", 'images/33449161.jpg', 'images/33449162.jpg', 'images/33449164.jpg', 'images/33449174.jpg', 'images/33449176.jpg'],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
-            map: {},
+            conditions: ["check-in by 8PM", "check-out by 11 AM","no smoking","small pets allowed"],
+            map: self.map1,
             address: {
                 street: "Via Carducci 25/C",
                 Zip: "37129",
@@ -41,10 +42,10 @@ function BBController($state, $stateParams, $rootScope) {
 
         {
             name: "Suite Sud",
-            images_url: ["images/card_salone.jpg"],
+            images_url: ["images/Letto dietro.JPG","images/IMG_7693.JPG","images/IMG_7658.JPG","images/IMG_7399.JPG","images/IMG_7338.JPG"],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
-            map: {},
+            map:self.map1,
             address: {
                 street: "Via Carducci 25/C",
                 Zip: "37129",
@@ -65,9 +66,9 @@ function BBController($state, $stateParams, $rootScope) {
                 'images/30453265_v.jpg',
                 'images/30453458_v.jpg',
             ],
-            description: "This apartment, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.",
+            description: "This apartment, approximately 120 m2 in size, consists of a sunny living/dining area, with fully-equipped modern kitchen, a master bedroom, a double bedroom, a single bedroom and one bath, furnished with antiques. Guests with automobiles find ample parking next to the apartment and the nearby vicinity of the ring road. Guests without automobiles can easily move around using the city and provincial public transport system.",
             amenities: ["3 rooms", "1 bath", "kitchen", "Parking", "Air conditioning", "Laundry", "Free wifi"],
-            map: {},
+            map: self.map2,
             address: {
                 street: "Via Giovanni da Verazzano 8",
                 Zip: "37138",
@@ -91,40 +92,7 @@ function BBController($state, $stateParams, $rootScope) {
         };
         return myObject
     });
-    //console.log(arrayOfImageObj)
 
-    // self.currentIndex = 0;
-    //
-    // self.next = function() {
-    //     console.log("clicked");
-    //     self.currentIndex < myImages.length - 1 ? self.currentIndex++ : self.currentIndex = 0;
-    // };
-    //
-    // self.prev = function() {
-    //     self.currentIndex > 0 ? self.currentIndex-- : self.currentIndex = myImages.length - 1;
-    // };
-
-
-    // self.setImageON = function(array) {
-    //     for (i = 0; i < array.length; i++) {
-    //         array[i].visible = false;
-    //         array[self.currentIndex].visible = true
-    //     }
-    // }
-    //
-    // self.setImageON(arrayOfImageObj);
-    //
-    // console.log(arrayOfImageObj);
-    //
     console.log(self.arrayOfImageObj);
 
-    $rootScope.$on(console.log("touched"))
-    console.log($rootScope.$on)
-
-    $rootScope.$on('$stateChangeStart',
-        function(event, toState, toParams, fromState, fromParams) {
-            console.log("other state");
-            // transitionTo() promise will be rejected with
-            // a 'transition prevented' error
-        });
 }
