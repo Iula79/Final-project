@@ -57,7 +57,7 @@ function BBController($state, $stateParams, $rootScope) {
         },
 
         {
-            name: "VGDV",
+            name: "Residenza Verazzano",
             images_url: ['images/22846608_v.jpg','images/22846564_v.jpg',
                 'images/22846705_v.jpg',
                 'images/30453111_v.jpg',
@@ -69,13 +69,13 @@ function BBController($state, $stateParams, $rootScope) {
             amenities: ["3 rooms", "1 bath", "kitchen", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             map: {},
             address: {
-                street: "Via Carducci 25/C",
-                Zip: "37129",
+                street: "Via Giovanni da Verazzano 8",
+                Zip: "37138",
                 City: "Verona",
                 Country: "Italia",
                 Tel: "0039 045 8034501",
                 Cell: "0039 347 8545386",
-                Email: 'info@residenzacarducci.com'
+                Email: 'info@apartmentsverona.it'
             }
         }
     ];

@@ -4,9 +4,9 @@ var appBB = angular
 
 function MainRouter(states, router) {
     states
-    .state( 'home', {
+    .state( 'index', {
       url:'/',
-      templateUrl: 'home.html'
+      templateUrl: 'index.html'
   }).state( 'show',{
       url:'/show',
       templateUrl:'show.html'
