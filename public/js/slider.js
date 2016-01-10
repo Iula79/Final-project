@@ -1,5 +1,5 @@
 appBB.directive('slider', function($timeout) {
-console.log("In slider");
+    console.log("In slider");
     return {
         restrict: 'AE',
         replace: true,
@@ -19,13 +19,13 @@ console.log("In slider");
                 console.log("clicked");
                 scope.currentIndex < scope.images.length - 1 ? scope.currentIndex++ : scope.currentIndex = 0;
                 console.log(scope.currentIndex);
-                };
+            };
 
             scope.prev = function() {
                 console.log("clicked");
                 scope.currentIndex > 0 ? scope.currentIndex-- : scope.currentIndex = scope.images.length - 1;
                 console.log(scope.currentIndex);
-                };
+            };
 
             console.log(scope.currentIndex);
             console.log(elem);
@@ -35,6 +35,19 @@ console.log("In slider");
                 });
 
                 scope.images[scope.currentIndex].visible = true;
+            });
+            var timer;
+            var sliderFunc = function() {
+                timer = $timeout(function() {
+                    scope.next();
+                    timer = $timeout(sliderFunc, 3000);
+                }, 3000);
+            };
+
+            sliderFunc();
+
+            scope.$on('$destroy', function() {
+                $timeout.cancel(timer); // when the scope is getting destroyed, cancel the timer
             });
         }
     };
