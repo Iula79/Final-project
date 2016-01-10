@@ -1,5 +1,6 @@
 body {
-    background-image:  no-repeat center center fixed;
+    /*background-color: rgba(70, 200, 70, 1);*/
+    background: url("/images/Verona_bridge_c1825.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,6 +20,9 @@ body {
     padding: 15px;
 }
 
+.panel {
+    background-color: transparent !important;
+}
 .jumbotron {
     background-color: transparent !important;
 }

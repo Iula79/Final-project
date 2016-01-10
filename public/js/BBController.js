@@ -44,7 +44,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
 
         {
             name: "Suite Sud",
-            images_url: ["images/Letto dietro.JPG","images/IMG_7693.JPG","images/IMG_7658.JPG","images/IMG_7399.JPG","images/IMG_7338.JPG"],
+            images_url: ["images/Letto dietro.jpg","images/IMG_7693.jpg","images/IMG_7658.jpg","images/IMG_7399.jpg","images/IMG_7338.jpg"],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment can accomodate a maximum of 3 people and we can provide a crib for infants." ,
             amenities: ["2 rooms", "Kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
