@@ -23,7 +23,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
 
     self.apartments = [{
 
-            name: "Suite Nord",
+            name: "Suite Sud",
             images_url: ["images/33449159.jpg", 'images/33449161.jpg', 'images/33449162.jpg', 'images/33449164.jpg', 'images/33449174.jpg', 'images/33449176.jpg'],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.The apartment can accomodate a maximum of 3 people and we can provide a crib for infants.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
@@ -43,9 +43,9 @@ function BBController($state, $stateParams, $sce, $rootScope) {
         },
 
         {
-            name: "Suite Sud",
+            name: "Suite Nord",
             images_url: ["images/Letto dietro.jpg","images/IMG_7693.jpg","images/IMG_7658.jpg","images/IMG_7399.jpg","images/IMG_7338.jpg"],
-            description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment can accomodate a maximum of 3 people and we can provide a crib for infants." ,
+            description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment faces the internal courtyard, it can accomodate a maximum of 3 people and we can provide a crib for infants." ,
             amenities: ["2 rooms", "Kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
             conditions: ["check-in: 8PM", "check-out: 11 AM","no smoking","small pets allowed"],

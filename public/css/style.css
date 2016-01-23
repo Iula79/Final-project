@@ -31,6 +31,7 @@ h1 {
     font-family: Josefin Sans;
     font-size: 80px;
     color: white;
+    /*max-width: 100%;*/
 }
 
 h2 {
@@ -153,6 +154,9 @@ height: 610px;
 
 @media (max-width: 800px){
 
+#main {
+    margin: 0px;
+}
   h1{
     font-size:50px;
     line-height: 60px;
