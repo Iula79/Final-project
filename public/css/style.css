@@ -115,7 +115,16 @@ iframe {
 #mydirective {
     font-size: 40px;
 }
+.left {
+    float: left;
+}
+.right {
+    float:right;
+}
 
+.standalone {
+    clear:both;
+}
 /*---------------- show single -----------*/
 
 #amenities {
