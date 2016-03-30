@@ -117,14 +117,33 @@ iframe {
 }
 .left {
     float: left;
+    margin: 10px;
 }
 .right {
     float:right;
+    margin: 10px;
 }
 
 .standalone {
     clear:both;
 }
+.paragraph {
+    text-align: justify;
+    margin: 10px;
+}
+.picture-R {
+    box-shadow: 5px 5px 5px #777777;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transform: rotate(-2deg);
+}
+.picture-L {
+    box-shadow: 5px 5px 5px #777777;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    transform: rotate(-2deg);
+}
+
 /*---------------- show single -----------*/
 
 #amenities {

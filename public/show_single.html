@@ -79,13 +79,12 @@
             </div>
         </div>
 
-        <div id="address">
-            <p>{{bbs.apartments[bbs.myParams].address.street}}</p>
-            <p>{{bbs.apartments[bbs.myParams].address.City}}</p>
-            <p>{{bbs.apartments[bbs.myParams].address.Zip}}</p>
-            <p>{{bbs.apartments[bbs.myParams].address.Country}}</p>
+        <div id="address" align="center">
+            <p>{{bbs.apartments[bbs.myParams].address.street}},
+            {{bbs.apartments[bbs.myParams].address.City}}</p>
+            <p>{{bbs.apartments[bbs.myParams].address.Zip}}, {{bbs.apartments[bbs.myParams].address.Country}}</p>
             <p>{{bbs.apartments[bbs.myParams].address.Tel}}</p>
-            <p>{{bbs.apartments[bbs.myParams].address.Email}}</p>
+            <a href="mailto:{{bbs.apartments[bbs.myParams].address.Email}}">{{bbs.apartments[bbs.myParams].address.Email}}</a>
             <!-- {{"toggle contact form"}} -->
         </div>
 
