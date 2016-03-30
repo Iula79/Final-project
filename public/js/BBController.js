@@ -50,7 +50,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
             pricing: "between 80 and 180 per night depending on the season or events",
             conditions: ["check-in: 8PM", "check-out: 11 AM","no smoking","small pets allowed"],
             map:self.map1,
-            directions:["airbus to Stazione Porta Nuova", "72 or 73 minibus lines - Via Carducci stop" , "91 line after 8 PM or during festivities" , "there is a nearby covered parking that charges 10 Euro per day", "we are outside the ZTL area"],
+            directions:["AIRBUS to Stazione Porta Nuova - 6,00 Euro or TAXI to Via Carducci - 29,00 Euro weekdays and 34,00 Euro weekends ", " MINIBUS 72 or 73 - weekdays - 'Via Interrato dell'Acqua Morta' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , " BUS 91 - evenings and weekends - 'Via Carducci' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , "TAXI to Via Carducci - 12,00 Euro weekdays and 15,00 Euro weekends","there is a nearby covered parking that charges 10 Euro per day", "we are outside the ZTL area"],
             address: {
                 street: "Via Carducci 25/C",
                 Zip: "37129",
