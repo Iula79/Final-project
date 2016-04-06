@@ -160,13 +160,18 @@ iframe {
 
 @media screen and (max-width: 800px) {
 
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0;
+}
     #main {
         margin: 0 auto;
-        padding: 0px;
+        padding: 5px;
     }
     #main2 {
-        margin: 0px;
-        padding: 0px;
+        margin: 15px;
+        padding: 5px;
+        overflow: hidden;
     }
     h1 {
         width: auto;
@@ -177,10 +182,16 @@ iframe {
         font-size: 50px;
         line-height: 60px;
     }
+    h4 {
+        font-size: 30px;
+    }
     #amenities {
     text-align: center;
     }
     #conditions {
     text-align: center;
+    }
+    .picture-L {
+        transform: none;
     }
 }
