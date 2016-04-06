@@ -12,6 +12,7 @@ Residenza Carducci is in need to modernize and restyle their website, add intera
 The website will be redisigned using angular and bootstrap. The home page will have several features: the possibility to chose between the apartment and the B&B rooms, the possibility to choose between languages and a link to the facebook page.
 Each section will have a home page, a section with the rooms availabilty and pricing, a section for faq and a section for location and contacts. The user will be able to send an email via contact form. 
 
+__intermediate and advanced solution are suspended because the owner does not want to manage content__
 
 ## Intermediate Solution:
 
