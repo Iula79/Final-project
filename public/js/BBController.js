@@ -25,12 +25,12 @@ function BBController($state, $stateParams, $sce, $rootScope) {
 
             name: "Suite Sud",
             images_url: ["images/33449159.jpg", 'images/33449161.jpg', 'images/33449162.jpg', 'images/33449164.jpg', 'images/33449174.jpg', 'images/33449176.jpg'],
-            description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn.The apartment can accomodate a maximum of 3 people and we can provide a crib for infants.",
+            description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment can accomodate a maximum of 3 people, and we can provide a crib for infants.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
             conditions: ["check-in: 8PM", "check-out: 11 AM","no smoking","small pets allowed"],
             map: self.map1,
-            directions:["airbus to Stazione Porta Nuova", "72 or 73 minibus lines - Via Carducci stop" , "91 line after 8 PM or during festivities" , "there is a nearby covered parking that charges 10 Euro per day", "we are outside the ZTL area"],
+            directions:["AIRBUS to Stazione Porta Nuova - 6,00 Euro - then follow FROM THE STATION instructions" , "TAXI to Via Carducci - 29,00 Euro weekdays and 34,00 Euro weekends ", " MINIBUS 72 or 73 - weekdays - Platform B1 - 'Via Interrato dell'Acqua Morta' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , " BUS 91 - after 8PM, evenings and weekends - Platform D2 - 'Via Carducci' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , "TAXI to Via Carducci - 12,00 Euro weekdays and 15,00 Euro weekends","There is a nearby covered parking that charges 10 Euro per day", "We are outside the ZTL area"],
             address: {
                 street: "Via Carducci 25/C",
                 Zip: "37129",
@@ -45,12 +45,12 @@ function BBController($state, $stateParams, $sce, $rootScope) {
         {
             name: "Suite Nord",
             images_url: ["images/Letto dietro.jpg","images/IMG_7693.jpg","images/IMG_7658.jpg","images/IMG_7399.jpg","images/IMG_7338.jpg"],
-            description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment faces the internal courtyard, it can accomodate a maximum of 3 people and we can provide a crib for infants." ,
+            description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment faces the internal courtyard; it can accomodate a maximum of 3 people, and we can provide a crib for infants." ,
             amenities: ["2 rooms", "Kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
             conditions: ["check-in: 8PM", "check-out: 11 AM","no smoking","small pets allowed"],
             map:self.map1,
-            directions:["AIRBUS to Stazione Porta Nuova - 6,00 Euro or TAXI to Via Carducci - 29,00 Euro weekdays and 34,00 Euro weekends ", " MINIBUS 72 or 73 - weekdays - 'Via Interrato dell'Acqua Morta' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , " BUS 91 - evenings and weekends - 'Via Carducci' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , "TAXI to Via Carducci - 12,00 Euro weekdays and 15,00 Euro weekends","there is a nearby covered parking that charges 10 Euro per day", "we are outside the ZTL area"],
+            directions:["AIRBUS to Stazione Porta Nuova - 6,00 Euro - then follow FROM THE STATION instructions" , "TAXI to Via Carducci - 29,00 Euro weekdays and 34,00 Euro weekends ", " MINIBUS 72 or 73 - weekdays - Platform B1 - 'Via Interrato dell'Acqua Morta' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , " BUS 91 - after 8PM, evenings and weekends - Platform D2 - 'Via Carducci' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , "TAXI to Via Carducci - 12,00 Euro weekdays and 15,00 Euro weekends","There is a nearby covered parking that charges 10 Euro per day", "We are outside the ZTL area"],
             address: {
                 street: "Via Carducci 25/C",
                 Zip: "37129",
@@ -75,7 +75,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
             pricing: "between 60 and 160 euro per day depending on the season, the length of the stay and the number of guests",
             conditions: ["check-in: TBD","no smoking","small pets allowed"],
             map: self.map2,
-            directions:["airbus to Verona Porta Nuova station", "61 line from platform D - Via Colombo stop","93 or 94 lines after 8 PM or during festivities  - via Colombo stop", "Free Parking is available in the area" ],
+            directions:["AIRBUS to Stazione Porta Nuova - 6,00 Euro - then follow FROM THE STATION instructions", "TAXI to Via G. da Verazzano - 26,00 Euro weekdays and 30,00 Euro weekends", " BUS 61 - weekdays - platform D2 - Via Magellano stop - 1,30 Euro in advance, 2,00 Euro on the bus"," BUS 93 or 94 - after 8 PM, weekends and holidays - platform D2 - via Colombo stop - 1,30 Euro in advance, 2,00 Euro on the bus", "TAXI to Via G. da Verazzano - 12,00 Euro weekdays and 15,00 Euro weekends and holidays", "Free Parking is available in the area" ],
             address: {
                 street: "Via Giovanni da Verazzano 8",
                 Zip: "37138",
