@@ -1,7 +1,6 @@
 /*------------------index---------------*/
 
 body {
-    /*background-color: rgba(70, 200, 70, 1);*/
     background: url("/images/Verona_bridge_c1825.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -18,7 +17,6 @@ body {
 }
 #header {
     height: auto;
-    /*padding: 15px;*/
 }
 .panel {
     background-color: transparent !important;
@@ -90,7 +88,7 @@ ul {
     margin: 120px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.89);
-    padding: 40px;
+    padding: 20px;
 }
 h3 {
     font-family: Josefin Sans;
@@ -135,17 +133,6 @@ iframe {
 .standalone {
     clear: both;
 }
-
-/*.row{
-    overflow: hidden;
-}
-
-[class*="col-"]{
-    background-color: white;
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-}*/
-
 .paragraph {
     text-align: justify;
     margin: 10px;
@@ -207,9 +194,7 @@ iframe {
         padding-right: 0;
     }
     #main {
-        margin: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px;
         padding: 5px;
     }
     #main2 {
@@ -228,10 +213,6 @@ iframe {
     h4 {
         font-size: 30px;
     }
-    /*.paragraph {
-        max-height: 500px;
-        overflow: hidden;
-    }*/
     #amenities {
         margin-left: 0px;
         margin-right: 0px;
