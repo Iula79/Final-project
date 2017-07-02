@@ -1,11 +1,8 @@
 var appBB = angular
 .module('appBB', ['ui.router','ngAnimate'])
-.config(['$stateProvider','$urlRouterProvider',MainRouter]);
-
-
-function MainRouter(states, router) {
-    states
-    .state( 'home', {
+.config(function($stateProvider,$urlRouterProvider, $locationProvider){
+    $stateProvider
+      .state( 'home', {
       url:'/',
       templateUrl: 'home.html'
   }).state( 'show',{
@@ -15,6 +12,8 @@ function MainRouter(states, router) {
       url:'/showSingle/:id',
       templateUrl:'show_single.html'
 });
-    router.otherwise('/');
-}
+$urlRouterProvider.otherwise('/');
+$locationProvider.html5Mode(true);
+});
+
 
