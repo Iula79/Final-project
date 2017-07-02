@@ -1,6 +1,7 @@
 var appBB = angular
 .module('appBB', ['ui.router','ngAnimate'])
-.config(['$stateProvider', '$urlRouterProvider', MainRouter]);
+.config(['$stateProvider','$urlRouterProvider',MainRouter]);
+
 
 function MainRouter(states, router) {
     states
@@ -16,3 +17,4 @@ function MainRouter(states, router) {
 });
     router.otherwise('/');
 }
+

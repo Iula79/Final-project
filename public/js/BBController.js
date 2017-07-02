@@ -8,14 +8,12 @@ function BBController($state, $stateParams, $sce, $rootScope) {
     // tb.addEventListener("click", function(event){
     //     console.log("pressed")
     // })
-
-
-
     console.log("here");
-
+    
     var self = this;
-    self.map1 = $sce.trustAsResourceUrl("https://maps.google.com/maps?hl=en&q=Residenza Carducci Verona&ie=UTF8&t=roadmap&z=13&iwloc=B&output=embed");
-    self.map2 = $sce.trustAsResourceUrl('https://maps.google.com/maps?hl=en&q=Residenza Verazzano Verona&ie=UTF8&t=roadmap&z=14&iwloc=B&output=embed');
+    self.map1 = $sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.3796219221226!2d11.002030615225646!3d45.4420057429457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f5f36f889ec79%3A0x368e0dcf1358ac49!2sVia+Giosu%C3%A8+Carducci%2C+25C%2C+37129+Verona+VR%2C+Italy!5e0!3m2!1sen!2sus!4v1498937455719");
+    self.map2 = $sce.trustAsResourceUrl("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.9879349191206!2d10.97646651522595!3d45.44989924241916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781e1ffc1c256a9%3A0x451e7a1b99d14fd4!2sVia+Giovanni+da+Verrazzano%2C+8%2C+37138+Verona+VR%2C+Italy!5e0!3m2!1sen!2sus!4v1498937881976"
+);
     self.active = $stateParams.id;
 
     self.myParams = parseInt($stateParams.id) - 1;
@@ -28,7 +26,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment can accomodate a maximum of 3 people, and we can provide a crib for infants.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
-            conditions: ["check-in: 8PM", "check-out: 11 AM","no smoking","small pets allowed"],
+            conditions: ["no smoking","check-in: btw 1PM and 9PM", "check-out: 11 AM","-","please contact us if you plan to arrive outside the regular check-in hours"],
             map: self.map1,
             directions:["AIRBUS to Stazione Porta Nuova - 6,00 Euro - then follow FROM THE STATION instructions" , "TAXI to Via Carducci - 29,00 Euro weekdays and 34,00 Euro weekends ", " MINIBUS 72 or 73 - weekdays - Platform B1 - 'Via Interrato dell'Acqua Morta' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , " BUS 91 - after 8PM, evenings and weekends - Platform D2 - 'Via Carducci' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , "TAXI to Via Carducci - 12,00 Euro weekdays and 15,00 Euro weekends","There is a nearby covered parking that charges 10 Euro per day", "We are outside the ZTL area"],
             address: {
@@ -48,7 +46,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment faces the internal courtyard; it can accomodate a maximum of 3 people, and we can provide a crib for infants." ,
             amenities: ["2 rooms", "Kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
-            conditions: ["check-in: 8PM", "check-out: 11 AM","no smoking","small pets allowed"],
+            conditions: ["no smoking","check-in: btw 1PM and 9PM", "check-out: 11 AM","-","please contact us if you plan to arrive outside the regular check-in hours"],
             map:self.map1,
             directions:["AIRBUS to Stazione Porta Nuova - 6,00 Euro - then follow FROM THE STATION instructions" , "TAXI to Via Carducci - 29,00 Euro weekdays and 34,00 Euro weekends ", " MINIBUS 72 or 73 - weekdays - Platform B1 - 'Via Interrato dell'Acqua Morta' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , " BUS 91 - after 8PM, evenings and weekends - Platform D2 - 'Via Carducci' stop - 1,30 Euro in advance, 2,00 Euro on the bus" , "TAXI to Via Carducci - 12,00 Euro weekdays and 15,00 Euro weekends","There is a nearby covered parking that charges 10 Euro per day", "We are outside the ZTL area"],
             address: {
@@ -73,7 +71,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
             description: "This apartment, approximately 120 m2 in size, consists of a sunny living/dining area, with fully-equipped modern kitchen, a master bedroom, a double bedroom, a single bedroom and one bath, furnished with antiques. Guests with automobiles find ample parking next to the apartment and the nearby vicinity of the ring road. Guests without automobiles can easily move around using the city and provincial public transport system.",
             amenities: ["4 rooms", "1 bath", "Kitchen", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 60 and 160 euro per day depending on the season, the length of the stay and the number of guests",
-            conditions: ["check-in: TBD","no smoking","small pets allowed"],
+            conditions: ["check-in: TBD","no smoking"],
             map: self.map2,
             directions:["AIRBUS to Stazione Porta Nuova - 6,00 Euro - then follow FROM THE STATION instructions", "TAXI to Via G. da Verazzano - 26,00 Euro weekdays and 30,00 Euro weekends", " BUS 61 - weekdays - platform D2 - Via Magellano stop - 1,30 Euro in advance, 2,00 Euro on the bus"," BUS 93 or 94 - after 8 PM, weekends and holidays - platform D2 - via Colombo stop - 1,30 Euro in advance, 2,00 Euro on the bus", "TAXI to Via G. da Verazzano - 12,00 Euro weekdays and 15,00 Euro weekends and holidays", "Free Parking is available in the area" ],
             address: {
