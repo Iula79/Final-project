@@ -22,7 +22,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
     self.apartments = [{
 
             name: "Suite Sud",
-            images_url: ["images/Residenza_carducci_bedroom_detail.jpg", 'images/Residenza_Carducci_dettaglio_bagno.jpg', 'images/Residenza_Carducci_Suite_Sud_kitchenette.jpg', 'images/Residenza_Carducci_dettaglio_decorativo.jpg', 'images/Residenza_Carducci_salotto.jpg', 'images/Residenza_Carducci_Suite_SUD.jpg'],
+            images_url: ['images/Residenza_Carducci_Suite_SUD.jpg',"images/Residenza_carducci_bedroom_detail.jpg", 'images/Residenza_Carducci_dettaglio_bagno.jpg', 'images/Residenza_Carducci_Suite_Sud_kitchenette.jpg', 'images/Residenza_Carducci_dettaglio_decorativo.jpg', 'images/Residenza_Carducci_salotto.jpg'],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment can accomodate a maximum of 3 people, and we can provide a crib for infants.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
@@ -67,6 +67,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
                 'images/Residenza_Verazzano_cucina.jpg',
                 'images/Residenza_verazzano_scorcio_entrata.jpg',
                 'images/Residenza_verazzano_salone.jpg',
+                'images/Residenza_Verazzano_saletta.jpg'
             ],
             description: "This apartment, approximately 120 m2 in size, consists of a sunny living/dining area, with fully-equipped modern kitchen, a master bedroom, a double bedroom, a single bedroom and one bath, furnished with antiques. Guests with automobiles find ample parking next to the apartment and the nearby vicinity of the ring road. Guests without automobiles can easily move around using the city and provincial public transport system.",
             amenities: ["4 rooms", "1 bath", "Kitchen", "Parking", "Air conditioning", "Laundry", "Free wifi"],

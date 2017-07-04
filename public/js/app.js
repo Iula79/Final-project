@@ -2,7 +2,7 @@ var appBB = angular
 .module('appBB', ['ui.router','ngAnimate'])
 .config(function($stateProvider,$urlRouterProvider, $locationProvider){
     $stateProvider
-      .state( 'home', {
+      .state( 'intro', {
       url:'/',
       templateUrl: 'home.html'
   }).state( 'show',{

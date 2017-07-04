@@ -43,6 +43,7 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: justify;
+    letter-spacing: 1px;
 }
 #paragraph2 {
     font-size: 15px;
