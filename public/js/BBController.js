@@ -22,7 +22,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
     self.apartments = [{
 
             name: "Suite Sud",
-            images_url: ["images/33449159.jpg", 'images/33449161.jpg', 'images/33449162.jpg', 'images/33449164.jpg', 'images/33449174.jpg', 'images/33449176.jpg'],
+            images_url: ["images/Residenza_carducci_bedroom_detail.jpg", 'images/Residenza_Carducci_dettaglio_bagno.jpg', 'images/Residenza_Carducci_Suite_Sud_kitchenette.jpg', 'images/Residenza_Carducci_dettaglio_decorativo.jpg', 'images/Residenza_Carducci_salotto.jpg', 'images/Residenza_Carducci_Suite_SUD.jpg'],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment can accomodate a maximum of 3 people, and we can provide a crib for infants.",
             amenities: ["2 rooms", "kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
@@ -42,7 +42,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
 
         {
             name: "Suite Nord",
-            images_url: ["images/Letto dietro.jpg","images/IMG_7693.jpg","images/IMG_7658.jpg","images/IMG_7399.jpg","images/IMG_7338.jpg"],
+            images_url: ["images/Residenza_Carducci_letto_dietro.jpg","images/Residenza_Carducci_bedroom.jpg","images/Residenza_Carducci_kitchenette.jpg","images/Residenza_Carducci_Cortile.jpg","images/Residenza_Carducci_Suite_Nord2.jpg"],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment faces the internal courtyard; it can accomodate a maximum of 3 people, and we can provide a crib for infants." ,
             amenities: ["2 rooms", "Kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
@@ -62,11 +62,11 @@ function BBController($state, $stateParams, $sce, $rootScope) {
 
         {
             name: "Residenza Verazzano",
-            images_url: ['images/30453265_v.jpg','images/22846608_v.jpg','images/22846564_v.jpg',
-                'images/22846705_v.jpg',
-                'images/30453111_v.jpg',
-                'images/30453214_v.jpg',
-                'images/30453458_v.jpg',
+            images_url: ['images/Residenza_Verazzano_master_bedroom.jpg','images/Residenza_Verazzano_hallway.jpg','images/Residenza_Verazzano_Secondary_Bedroom.jpg',
+                'images/Residenza_Verazzano_bagno.jpg',
+                'images/Residenza_Verazzano_cucina.jpg',
+                'images/Residenza_verazzano_scorcio_entrata.jpg',
+                'images/Residenza_verazzano_salone.jpg',
             ],
             description: "This apartment, approximately 120 m2 in size, consists of a sunny living/dining area, with fully-equipped modern kitchen, a master bedroom, a double bedroom, a single bedroom and one bath, furnished with antiques. Guests with automobiles find ample parking next to the apartment and the nearby vicinity of the ring road. Guests without automobiles can easily move around using the city and provincial public transport system.",
             amenities: ["4 rooms", "1 bath", "Kitchen", "Parking", "Air conditioning", "Laundry", "Free wifi"],
