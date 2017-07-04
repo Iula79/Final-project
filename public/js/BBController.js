@@ -42,7 +42,7 @@ function BBController($state, $stateParams, $sce, $rootScope) {
 
         {
             name: "Suite Nord",
-            images_url: ["images/Residenza_Carducci_letto_dietro.jpg","images/Residenza_Carducci_bedroom.jpg","images/Residenza_Carducci_kitchenette.jpg","images/Residenza_Carducci_Cortile.jpg","images/Residenza_Carducci_Suite_Nord2.jpg"],
+            images_url: ["images/Residenza_Carducci_letto_dietro.jpg","images/Residenza_Carducci_bedroom.jpg","images/Residenza_Carducci_kitchenette.jpg","images/Residenza_Carducci_Suite_Nord2.jpg","images/Residenza_Carducci_Cortile.jpg"],
             description: "This suite, approximately 45 m2 in size, consists of a living/dining area with fully-equipped kitchenette and a double bedroom with bath, furnished with antiques from the original inn. The apartment faces the internal courtyard; it can accomodate a maximum of 3 people, and we can provide a crib for infants." ,
             amenities: ["2 rooms", "Kitchenette", "Parking", "Air conditioning", "Laundry", "Free wifi"],
             pricing: "between 80 and 180 per night depending on the season or events",
