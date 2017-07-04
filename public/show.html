@@ -1,7 +1,7 @@
 <div id="main2" align="center">
     <div class="page-header" id="header">
 
-        <h3>RESIDENZA CARDUCCI</h3>
+        <h1 class="internal">RESIDENZA CARDUCCI</h1>
 
     </div>
 
@@ -9,10 +9,10 @@
         <div>
             <ul class="nav navbar-nav">
                 <li><a ui-sref="intro">INTRO</a></li>
-                <li ng-class="{ active: ('/show')}"><a ui-sref="index">HOME</a></li>
-                <li><a ui-sref="showSingle({id: 1})" id="apt1">SUITE SUD</a></li>
-                <li><a ui-sref="showSingle({id: 2})" id="apt2">SUITE NORD</a></li>
-                <li><a ui-sref="showSingle({id: 3})" id="apt3">VERAZZANO</a></li>
+                <li ng-class="{ active: ('/home')}"><a ui-sref="index">HOME</a></li>
+                <li><a ui-sref="apartment({id: 1})" id="apt1">SUITE SUD</a></li>
+                <li><a ui-sref="apartment({id: 2})" id="apt2">SUITE NORD</a></li>
+                <li><a ui-sref="apartment({id: 3})" id="apt3">VERAZZANO</a></li>
 
         </div>
     </nav>

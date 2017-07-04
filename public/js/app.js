@@ -5,11 +5,11 @@ var appBB = angular
       .state( 'intro', {
       url:'/',
       templateUrl: 'home.html'
-  }).state( 'show',{
-      url:'/show',
+  }).state( 'home',{
+      url:'/home',
       templateUrl:'show.html'
-  }).state('showSingle', {
-      url:'/showSingle/:id',
+  }).state('apartment', {
+      url:'/apartment/:id',
       templateUrl:'show_single.html'
 });
 $urlRouterProvider.otherwise('/');
