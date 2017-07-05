@@ -2,7 +2,6 @@
 var express = require('express');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
-var rooms = require('./rooms.json');
 var app = express();
 var cors = require('cors');
 
