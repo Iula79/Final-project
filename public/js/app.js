@@ -11,6 +11,9 @@ var appBB = angular
   }).state('apartment', {
       url:'/apartment/:id',
       templateUrl:'apartment.html'
+}).state('about', {
+      url:'/about',
+      templateUrl:'about.html'
 });
 $urlRouterProvider.otherwise('/');
 
